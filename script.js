@@ -179,13 +179,6 @@ function loadBackgroundImage() {
             dateOfPhoto(response.created_at);
             // console.log(response);
         }
-        // إذا لم يتم الحصول على نتائج. مثلا اسم المدينة غير موجود
-        else if (this.readyState === 4 && this.status === 404) {
-            alert('No results found for "' + city + '", please check the city name.');
-            submitButton.disabled = false;
-            submitButton.value = "Update";
-            inputCityName.value = null;
-        }
     };
     request.open("GET", url, true);
     request.send();
