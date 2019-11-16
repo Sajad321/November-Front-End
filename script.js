@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // show results card when finished
         resultCard.style.display = "block";
     });
+    loadBackgroundImage();
 });
 
 
