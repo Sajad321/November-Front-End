@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // show results card when finished
         resultCard.style.display = "block";
     });
+    // استدعاء دالة تغيير الصورة
     loadBackgroundImage();
 });
 
@@ -47,6 +48,7 @@ searchForm.addEventListener('submit', function (e) {
             // reset input value
             inputCityName.value = null;
         })
+        // استدعاء دالة تغيير الصورة
         loadBackgroundImage();
     }
 });
